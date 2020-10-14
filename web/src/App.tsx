@@ -1,23 +1,14 @@
 import React from 'react';
 
-interface TitleProps{
-  text: string
-}
+import "./styles/global.css"
 
-function Title(props: TitleProps){
-  return(
-  <h1>{props.text}</h1>
-  )
-}
+import Routes from './routes'
+
+
 
 function App() {
   return (
-    <div className="App">
-      <Title text="Title 1"/>
-      <Title text="Title 2"/>
-      <Title text="Title 3"/>
-      <Title text="Title 4"/>
-    </div>
+    <Routes/>
   );
 }
 
